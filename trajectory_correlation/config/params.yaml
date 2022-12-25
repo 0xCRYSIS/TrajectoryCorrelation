@@ -1,0 +1,9 @@
+GroundTruthTopic : "/fake_gps"
+EstimatedTrajectoryTopic : "/fake_vo"
+Offset : 0.0
+Scale : 1.0
+MaxDifference : 0.02
+Save : false
+SaveAssociations : false
+Plot : false
+Verbose : true

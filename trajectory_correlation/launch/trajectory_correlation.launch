@@ -1,0 +1,13 @@
+<launch>
+
+    <!-- launch params from params.yaml -->
+    <rosparam file="$(find trajectory_correlation)/config/params.yaml" />
+
+    <!-- Launch trajectory correlation node -->
+    <node pkg="trajectory_correlation" name="trajectory_correlation" type="trajectory_correlation" output="screen" />
+
+    <!-- launching fake vo node and fake gps node to publish data -->
+    <!-- <node pkg="trajectory_correlation" name="fake_vo_node" type="fake_vo_node" output="screen" />
+    <node pkg="trajectory_correlation" name="fake_gps_node" type="fake_gps_node" output="screen" /> -->
+
+</launch>
